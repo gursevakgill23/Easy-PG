@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nle-cb-Tc5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nle-cb-Tc5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -44,6 +45,9 @@
                                 <color key="tintColor" red="0.062745098039215685" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <segue destination="3iZ-o9-D0G" kind="show" id="4xV-BI-63t"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-zf-jSb">
                                 <rect key="frame" x="20" y="348" width="374" height="53.5"/>
@@ -92,46 +96,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Yd-mD-lia">
-                                <rect key="frame" x="20" y="133" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Yd-mD-lia">
+                                <rect key="frame" x="20" y="138" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Yd-mD-lia" secondAttribute="height" multiplier="7:1" id="sBr-r3-FSY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wmL-OD-ycN">
-                                <rect key="frame" x="20" y="201" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wmL-OD-ycN">
+                                <rect key="frame" x="20" y="216.5" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-Ia-XMm">
-                                <rect key="frame" x="20" y="265" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-Ia-XMm">
+                                <rect key="frame" x="20" y="295" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljC-IS-Sel">
-                                <rect key="frame" x="20" y="403" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pg5-tW-8G5">
+                                <rect key="frame" x="20" y="368.5" width="374" height="53"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pg5-tW-8G5">
-                                <rect key="frame" x="20" y="333" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljC-IS-Sel">
+                                <rect key="frame" x="20" y="446.5" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-ui-Wof">
-                                <rect key="frame" x="74" y="514" width="266" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-ui-Wof">
+                                <rect key="frame" x="20" y="550" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -142,6 +143,36 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b5k-el-aAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ljC-IS-Sel" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="3Gf-u7-ugh"/>
+                            <constraint firstItem="1Yd-mD-lia" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="507-mR-dDN"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="pg5-tW-8G5" secondAttribute="trailing" constant="20" id="6Rh-0x-KsP"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="Nym-ui-Wof" secondAttribute="trailing" constant="20" id="8RS-lX-6Bo"/>
+                            <constraint firstItem="wmL-OD-ycN" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="AhB-DY-vLW"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="Fl5-Ia-XMm" secondAttribute="trailing" constant="20" id="Dce-o2-JmM"/>
+                            <constraint firstItem="ljC-IS-Sel" firstAttribute="top" secondItem="pg5-tW-8G5" secondAttribute="bottom" constant="25" id="FOD-lT-Wkx"/>
+                            <constraint firstItem="pg5-tW-8G5" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="Gjl-j7-K9v"/>
+                            <constraint firstItem="Fl5-Ia-XMm" firstAttribute="top" secondItem="wmL-OD-ycN" secondAttribute="bottom" constant="25" id="GxO-mb-JXp"/>
+                            <constraint firstItem="ljC-IS-Sel" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="NdZ-Fr-Q4x"/>
+                            <constraint firstItem="Nym-ui-Wof" firstAttribute="top" secondItem="ljC-IS-Sel" secondAttribute="bottom" constant="50" id="Ok9-dy-ekc"/>
+                            <constraint firstItem="1Yd-mD-lia" firstAttribute="top" secondItem="b5k-el-aAv" secondAttribute="top" constant="50" id="VFg-Mi-skE"/>
+                            <constraint firstItem="Fl5-Ia-XMm" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="YVQ-nV-Jsg"/>
+                            <constraint firstItem="pg5-tW-8G5" firstAttribute="top" secondItem="Fl5-Ia-XMm" secondAttribute="bottom" constant="20" id="dcw-ls-AJf"/>
+                            <constraint firstItem="pg5-tW-8G5" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="fex-Ck-V7M"/>
+                            <constraint firstItem="wmL-OD-ycN" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="g8M-Nd-AMt"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="1Yd-mD-lia" secondAttribute="trailing" constant="20" id="gpQ-xE-mBS"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="wmL-OD-ycN" secondAttribute="trailing" constant="20" id="iJc-h0-Epn"/>
+                            <constraint firstItem="Nym-ui-Wof" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" multiplier="1.11765" id="ifr-0P-7lv"/>
+                            <constraint firstItem="ljC-IS-Sel" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="iyn-l8-VuO"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="ljC-IS-Sel" secondAttribute="trailing" constant="20" id="jMz-TP-39b"/>
+                            <constraint firstItem="wmL-OD-ycN" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="jxM-mJ-xG7"/>
+                            <constraint firstItem="Fl5-Ia-XMm" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="lYv-t9-lli"/>
+                            <constraint firstItem="Nym-ui-Wof" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="oP0-GQ-Nao"/>
+                            <constraint firstItem="pg5-tW-8G5" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="rQd-95-aFM"/>
+                            <constraint firstItem="wmL-OD-ycN" firstAttribute="top" secondItem="1Yd-mD-lia" secondAttribute="bottom" constant="25" id="sK5-C1-J76"/>
+                            <constraint firstItem="Fl5-Ia-XMm" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="uOi-oc-efc"/>
+                            <constraint firstItem="1Yd-mD-lia" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="uhq-nA-PBA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UO4-kJ-h3d"/>
                 </viewController>
@@ -333,7 +364,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3Mj-od-W4g">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Mj-od-W4g" id="2d5-K3-7WP">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -493,7 +524,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="M70-9w-YRz">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M70-9w-YRz" id="v9F-mk-0rS">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
