@@ -18,57 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-Y9-hn6">
-                                <rect key="frame" x="20" y="97" width="374" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-zf-jSb">
-                                <rect key="frame" x="20" y="235" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIv-l1-4il">
+                                <rect key="frame" x="20" y="426.5" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-35-iAx">
-                                <rect key="frame" x="105" y="449" width="205" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-35-iAx">
+                                <rect key="frame" x="20" y="530" width="374" height="66"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIv-l1-4il">
-                                <rect key="frame" x="105" y="349" width="205" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4bC-sI-tPI">
+                                <rect key="frame" x="157" y="168" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XLg-ln-FyH"/>
+                                    <constraint firstAttribute="width" constant="100" id="iG6-MI-yMB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73w-Fa-Hlh">
+                                <rect key="frame" x="167" y="636" width="80" height="38"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
+                                <color key="tintColor" red="0.062745098039215685" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="SignUp"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-zf-jSb">
+                                <rect key="frame" x="20" y="348" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EFE-zf-jSb" secondAttribute="height" multiplier="7:1" id="Qdt-3B-hbj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgF-Mh-gSl">
-                                <rect key="frame" x="105" y="549" width="205" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3iZ-o9-D0G" kind="show" id="Tbn-7Y-52O"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gue-ot-9qa"/>
-                        <color key="backgroundColor" red="0.9997660518" green="0.72592043880000001" blue="0.4212759137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x5Q-35-iAx" firstAttribute="centerX" secondItem="g8j-4z-oHC" secondAttribute="centerX" id="089-Sp-ZyB"/>
+                            <constraint firstItem="4bC-sI-tPI" firstAttribute="top" secondItem="gue-ot-9qa" secondAttribute="top" constant="80" id="0g4-jP-Krs"/>
+                            <constraint firstItem="ZIv-l1-4il" firstAttribute="height" secondItem="EFE-zf-jSb" secondAttribute="height" id="D6w-yY-AWU"/>
+                            <constraint firstItem="gue-ot-9qa" firstAttribute="trailing" secondItem="ZIv-l1-4il" secondAttribute="trailing" constant="20" id="ErR-n7-3qy"/>
+                            <constraint firstItem="ZIv-l1-4il" firstAttribute="centerX" secondItem="g8j-4z-oHC" secondAttribute="centerX" id="FX3-6F-9De"/>
+                            <constraint firstItem="EFE-zf-jSb" firstAttribute="top" secondItem="4bC-sI-tPI" secondAttribute="bottom" constant="80" id="GfU-tI-w2T"/>
+                            <constraint firstItem="EFE-zf-jSb" firstAttribute="leading" secondItem="gue-ot-9qa" secondAttribute="leading" constant="20" id="MmL-w6-966"/>
+                            <constraint firstItem="gue-ot-9qa" firstAttribute="trailing" secondItem="EFE-zf-jSb" secondAttribute="trailing" constant="20" id="REY-cB-XxG"/>
+                            <constraint firstItem="x5Q-35-iAx" firstAttribute="height" secondItem="EFE-zf-jSb" secondAttribute="height" multiplier="1.23529" id="SVi-sA-M09"/>
+                            <constraint firstItem="73w-Fa-Hlh" firstAttribute="top" secondItem="x5Q-35-iAx" secondAttribute="bottom" constant="40" id="Tfi-rH-48S"/>
+                            <constraint firstItem="x5Q-35-iAx" firstAttribute="leading" secondItem="gue-ot-9qa" secondAttribute="leading" constant="20" id="UEe-so-Y0b"/>
+                            <constraint firstItem="73w-Fa-Hlh" firstAttribute="centerX" secondItem="g8j-4z-oHC" secondAttribute="centerX" id="Zkz-zB-AHc"/>
+                            <constraint firstItem="x5Q-35-iAx" firstAttribute="top" secondItem="ZIv-l1-4il" secondAttribute="bottom" constant="50" id="kcY-IT-78m"/>
+                            <constraint firstItem="4bC-sI-tPI" firstAttribute="centerX" secondItem="g8j-4z-oHC" secondAttribute="centerX" id="ol1-MN-0V0"/>
+                            <constraint firstItem="ZIv-l1-4il" firstAttribute="top" secondItem="EFE-zf-jSb" secondAttribute="bottom" constant="25" id="qDJ-GZ-Hgb"/>
+                            <constraint firstItem="ZIv-l1-4il" firstAttribute="leading" secondItem="gue-ot-9qa" secondAttribute="leading" constant="20" id="rhL-ie-cdB"/>
+                            <constraint firstItem="EFE-zf-jSb" firstAttribute="centerX" secondItem="g8j-4z-oHC" secondAttribute="centerX" id="wDx-3I-F8m"/>
+                            <constraint firstItem="gue-ot-9qa" firstAttribute="trailing" secondItem="x5Q-35-iAx" secondAttribute="trailing" constant="20" id="wu6-r8-75T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e45-NB-cjS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72O-jZ-WQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="125"/>
+            <point key="canvasLocation" x="298.55072463768118" y="124.55357142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cV0-Fc-nQR">
@@ -634,6 +649,7 @@
     </scenes>
     <resources>
         <image name="Owner" width="361.5" height="267.5"/>
+        <image name="appLogo" width="64" height="64"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
