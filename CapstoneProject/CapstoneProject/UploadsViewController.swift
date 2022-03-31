@@ -2,16 +2,15 @@
 //  UploadsViewController.swift
 //  CapstoneProject
 //
-//  Created by user202391 on 3/30/22.
+//  Created by Gursevak Singh on 3/30/22.
 //
 
 import UIKit
-typealias imageBlock = ((UIImage)->())
 
 class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
                              ,UINavigationControllerDelegate{
-    var imgBlock:imageBlock?
-
+    @IBOutlet weak var addressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +30,5 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
         self.present(picker, animated: true)
     }
     
-    @IBOutlet weak var addressTextField: UITextField!
     
 }
