@@ -16,6 +16,7 @@
 		A999B9BC27EA1B24000AD3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A999B9BA27EA1B24000AD3D8 /* LaunchScreen.storyboard */; };
 		A9B5E95F27F4BDB200421377 /* UploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5E95E27F4BDB200421377 /* UploadsViewController.swift */; };
 		A9CF352C27EAEF93007215F3 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF352B27EAEF93007215F3 /* LogoutViewController.swift */; };
+		E7D7EDA427F4EE6100A04266 /* UserSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7EDA327F4EE6100A04266 /* UserSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A999B9BD27EA1B24000AD3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9B5E95E27F4BDB200421377 /* UploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadsViewController.swift; sourceTree = "<group>"; };
 		A9CF352B27EAEF93007215F3 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		E7D7EDA327F4EE6100A04266 /* UserSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				A9CF352B27EAEF93007215F3 /* LogoutViewController.swift */,
 				A946D34527EAF0C7006174D4 /* LocationViewController.swift */,
 				A9B5E95E27F4BDB200421377 /* UploadsViewController.swift */,
+				E7D7EDA327F4EE6100A04266 /* UserSelectionViewController.swift */,
 				A946D34A27EAF14D006174D4 /* LoginViewController.swift */,
 				A999B9B527EA1B1A000AD3D8 /* Main.storyboard */,
 				A999B9B827EA1B24000AD3D8 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				A999B9B027EA1B1A000AD3D8 /* AppDelegate.swift in Sources */,
 				A9CF352C27EAEF93007215F3 /* LogoutViewController.swift in Sources */,
 				A9B5E95F27F4BDB200421377 /* UploadsViewController.swift in Sources */,
+				E7D7EDA427F4EE6100A04266 /* UserSelectionViewController.swift in Sources */,
 				A946D34B27EAF14D006174D4 /* LoginViewController.swift in Sources */,
 				A999B9B227EA1B1A000AD3D8 /* SceneDelegate.swift in Sources */,
 			);
