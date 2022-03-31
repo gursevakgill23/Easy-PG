@@ -9,24 +9,36 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
-    var locationManager = CLLocationManager()
+class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate,UITextFieldDelegate {
+    
+    @IBOutlet weak var map: MKMapView!
+    var locationManager = CLLocationManager ()
+
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Make map visable and set initial location
+    }
+        
+    override func viewDidAppear(_ animated: Bool) {
+            
+         //Make map visable and set initial location
+            
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        mapforLocation.delegate = self
-
-
-        // Do any additional setup after loading the view.
+        map.delegate = self
+        addressTextField.delegate = self
+        }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        addressTextField.resignFirstResponder()
+        return true
     }
-    @IBOutlet weak var mapforLocation: MKMapView!
+
     // trigger new location address and run location
       
-    @IBAction func getLocationBtn(_ sender: Any) {
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBAction func getDirection(_ sender: Any) {
         convertAddress()
     }
     
@@ -35,12 +47,12 @@ class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManag
         // converts address from text to coordinates Longtide and latitude
         func convertAddress() {
             let geoCoder = CLGeocoder()
-            geoCoder.geocodeAddressString("Waterloo") {
+            geoCoder.geocodeAddressString(addressTextField.text!) {
                 (placemarks, error) in
                guard let placemarks = placemarks,
                      let location = placemarks.first?.location
-                else {
-                        print ("no location found")
+               else {
+                print ("no location found")
                         return
                     }
                 print(location)
@@ -66,8 +78,8 @@ class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManag
             let pin = MKPointAnnotation ()
             
             pin.coordinate = coordinate
-            mapforLocation.addAnnotation(pin)
-            mapforLocation.setRegion(region, animated: true)
+            map.addAnnotation(pin)
+            map.setRegion(region, animated: true)
             
         }
         
@@ -99,7 +111,7 @@ class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManag
                 // if there is a response make it the response else make error
                 guard let response = response else {
                     if let error = error {
-                        print("something went wrong")
+                        print("something went wrong",error)
                     }
                     return
                 }
@@ -108,15 +120,15 @@ class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManag
                 let route = response.routes[0]
                 
                 // adding overlay to routes
-                self.mapforLocation.addOverlay(route.polyline)
-                self.mapforLocation.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                self.map.addOverlay(route.polyline)
+                self.map.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
                 
                 // setting endpoint pin
                 let pin = MKPointAnnotation()
                 let coordinate = CLLocationCoordinate2D (latitude: desitiationCor.latitude, longitude: desitiationCor.longitude )
                 pin.coordinate = coordinate
                 pin.title = "END POINT"
-                self.mapforLocation.addAnnotation(pin)
+                self.map.addAnnotation(pin)
         }
         
     }
