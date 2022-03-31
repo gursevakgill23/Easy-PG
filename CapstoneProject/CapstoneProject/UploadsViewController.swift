@@ -2,16 +2,15 @@
 //  UploadsViewController.swift
 //  CapstoneProject
 //
-//  Created by user202391 on 3/30/22.
+//  Created by Gursevak Singh on 3/30/22.
 //
 
 import UIKit
-typealias imageBlock = ((UIImage)->())
 
 class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
                              ,UINavigationControllerDelegate{
-    var imgBlock:imageBlock?
-
+    @IBOutlet weak var addressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,14 +29,6 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
         let picker = showImagePicker(sourceType: .photoLibrary)
         self.present(picker, animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
