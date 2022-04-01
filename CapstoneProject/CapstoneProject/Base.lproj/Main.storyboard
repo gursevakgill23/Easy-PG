@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nle-cb-Tc5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nle-cb-Tc5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -623,7 +623,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3Mj-od-W4g">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Mj-od-W4g" id="2d5-K3-7WP">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -745,7 +745,7 @@
                         <viewLayoutGuide key="safeArea" id="QDw-Jy-U1p"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Account" id="DTY-8C-Dw0"/>
+                    <tabBarItem key="tabBarItem" title="My Account" image="person" catalog="system" id="DTY-8C-Dw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dk-k6-hGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -818,7 +818,7 @@
                         <viewLayoutGuide key="safeArea" id="NfO-2q-huH"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Uploads" selectedImage="square.and.arrow.up" catalog="system" id="A6e-in-kaO"/>
+                    <tabBarItem key="tabBarItem" title="Uploads" image="square.and.arrow.up" catalog="system" selectedImage="square.and.arrow.up" id="A6e-in-kaO"/>
                     <connections>
                         <outlet property="addressTextField" destination="1Re-6Y-vkf" id="LbY-AR-ULL"/>
                     </connections>
@@ -978,7 +978,7 @@
                         <viewLayoutGuide key="safeArea" id="6VU-fV-7kG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chats" selectedImage="message" catalog="system" id="byS-p3-Fcq"/>
+                    <tabBarItem key="tabBarItem" title="Chats" image="message" catalog="system" selectedImage="message" id="byS-p3-Fcq"/>
                     <navigationItem key="navigationItem" id="PQX-sU-57D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icr-ni-P8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1063,7 +1063,7 @@
                         <viewLayoutGuide key="safeArea" id="jEq-UI-DxV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Account" id="hDN-ZG-76F"/>
+                    <tabBarItem key="tabBarItem" title="My Account" image="person" catalog="system" id="hDN-ZG-76F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bc0-2s-IHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1118,9 +1118,13 @@
         <image name="appLogo" width="64" height="64"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
