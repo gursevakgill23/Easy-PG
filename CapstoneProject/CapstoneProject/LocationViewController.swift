@@ -28,7 +28,7 @@ class LocationViewController: UIViewController,MKMapViewDelegate,CLLocationManag
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         map.delegate = self
-        addressTextField.delegate = self
+        //addressTextField.delegate = self
         }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         addressTextField.resignFirstResponder()
