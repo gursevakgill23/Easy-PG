@@ -14,7 +14,6 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
     
     @IBOutlet weak var pricetextField: UITextField!
     @IBOutlet weak var uploadedImagesView: UIImageView!
-    @IBOutlet weak var uploadeditemsView: UITextView!
     @IBOutlet weak var leaseTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,14 +41,7 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
     }
     
 
-    @IBAction func uploadImageBtn(_ sender: Any) {
-        let picker = showImagePicker(sourceType: .photoLibrary)
-        self.present(picker, animated: true)
-    }
     
-    @IBAction func showItems(_ sender: Any) {
-        uploadeditemsView?.text = "Number of beds and baths:\(String(describing: numberofBeds.text))\nPrice of Appartment:\(String(describing: pricetextField.text))\nLease Time for sublet:\(String(describing: leaseTextField.text))\nAddress:\(String(describing: addressTextField.text))"
-    }
     
 }
                                                                                                                                             

@@ -31,6 +31,7 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
     
     @IBOutlet weak var ownerimageView: UIImageView!
     
+    @IBOutlet weak var imageBtn: UIButton!
     
     @IBOutlet weak var firstname: UITextField!
     
@@ -44,12 +45,18 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
         let imgPicker = UIImagePickerController()
         imgPicker.sourceType = sourceType
         imgPicker.delegate = self
-        imgPicker.allowsEditing = false
+        imgPicker.allowsEditing = true
         return imgPicker
     }
 
     @IBAction func selectImage(_ sender: Any) {
         let picker = showImagePicker(sourceType: .photoLibrary)
         self.present(picker, animated: true)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.editedImage] as? UIImage else  {return}
+        ownerimageView.image = image
+        imageBtn.isHidden = true
+        dismiss(animated: true)
     }
 }
