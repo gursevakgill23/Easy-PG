@@ -12,6 +12,7 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var numberofBeds: UITextField!
     
+    @IBOutlet weak var uploadedItemImages: UIImageView!
     @IBOutlet weak var pricetextField: UITextField!
     @IBOutlet weak var uploadedImagesView: UIImageView!
     @IBOutlet weak var leaseTextField: UITextField!
@@ -36,9 +37,20 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
         let imgPicker = UIImagePickerController()
         imgPicker.sourceType = sourceType
         imgPicker.delegate = self
-        imgPicker.allowsEditing = false
+        imgPicker.allowsEditing = true
         return imgPicker
     }
+    @IBAction func showImagePicker(_ sender: Any) {
+        let picker = showImagePicker(sourceType: .photoLibrary)
+        self.present(picker, animated: true)
+
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.editedImage] as? UIImage else  {return}
+        uploadedItemImages.image = image
+        dismiss(animated: true)
+    }
+
     
 
     

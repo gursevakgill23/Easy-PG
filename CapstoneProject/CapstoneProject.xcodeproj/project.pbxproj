@@ -76,11 +76,11 @@
 				E7D7EDA327F4EE6100A04266 /* UserSelectionViewController.swift */,
 				A946D34A27EAF14D006174D4 /* LoginViewController.swift */,
 				54B8301427FB2A4C00BEB296 /* FeedbackTableViewCell.swift */,
+				A96DE03727FCA836001C9309 /* MyInformationViewController.swift */,
 				A999B9B527EA1B1A000AD3D8 /* Main.storyboard */,
 				A999B9B827EA1B24000AD3D8 /* Assets.xcassets */,
 				A999B9BA27EA1B24000AD3D8 /* LaunchScreen.storyboard */,
 				A999B9BD27EA1B24000AD3D8 /* Info.plist */,
-				A96DE03727FCA836001C9309 /* MyInformationViewController.swift */,
 			);
 			path = CapstoneProject;
 			sourceTree = "<group>";
