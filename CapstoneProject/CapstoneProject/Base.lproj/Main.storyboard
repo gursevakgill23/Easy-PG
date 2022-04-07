@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nle-cb-Tc5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -160,6 +161,16 @@
                                     <segue destination="0P7-Z8-0il" kind="show" id="hcO-dB-5Rd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f50-le-CgI">
+                                <rect key="frame" x="15" y="777" width="384" height="70"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YbZ-HY-U1i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemRedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b5k-el-aAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -171,12 +182,14 @@
                             <constraint firstItem="wmL-OD-ycN" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="AhB-DY-vLW"/>
                             <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="Fl5-Ia-XMm" secondAttribute="trailing" constant="20" id="Dce-o2-JmM"/>
                             <constraint firstItem="ljC-IS-Sel" firstAttribute="top" secondItem="pg5-tW-8G5" secondAttribute="bottom" constant="25" id="FOD-lT-Wkx"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="bottom" secondItem="f50-le-CgI" secondAttribute="bottom" constant="15" id="Fyi-cJ-H8T"/>
                             <constraint firstItem="pg5-tW-8G5" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="Gjl-j7-K9v"/>
                             <constraint firstItem="Fl5-Ia-XMm" firstAttribute="top" secondItem="wmL-OD-ycN" secondAttribute="bottom" constant="25" id="GxO-mb-JXp"/>
                             <constraint firstItem="ljC-IS-Sel" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="NdZ-Fr-Q4x"/>
                             <constraint firstItem="Nym-ui-Wof" firstAttribute="top" secondItem="ljC-IS-Sel" secondAttribute="bottom" constant="50" id="Ok9-dy-ekc"/>
                             <constraint firstItem="1Yd-mD-lia" firstAttribute="top" secondItem="b5k-el-aAv" secondAttribute="top" constant="50" id="VFg-Mi-skE"/>
                             <constraint firstItem="Fl5-Ia-XMm" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="YVQ-nV-Jsg"/>
+                            <constraint firstItem="f50-le-CgI" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="15" id="bIk-dK-5KH"/>
                             <constraint firstItem="pg5-tW-8G5" firstAttribute="top" secondItem="Fl5-Ia-XMm" secondAttribute="bottom" constant="20" id="dcw-ls-AJf"/>
                             <constraint firstItem="pg5-tW-8G5" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="fex-Ck-V7M"/>
                             <constraint firstItem="wmL-OD-ycN" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="g8M-Nd-AMt"/>
@@ -188,10 +201,12 @@
                             <constraint firstItem="wmL-OD-ycN" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="jxM-mJ-xG7"/>
                             <constraint firstItem="Fl5-Ia-XMm" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="lYv-t9-lli"/>
                             <constraint firstItem="Nym-ui-Wof" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="oP0-GQ-Nao"/>
+                            <constraint firstItem="b5k-el-aAv" firstAttribute="trailing" secondItem="f50-le-CgI" secondAttribute="trailing" constant="15" id="piQ-1e-8Bj"/>
                             <constraint firstItem="pg5-tW-8G5" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="rQd-95-aFM"/>
                             <constraint firstItem="wmL-OD-ycN" firstAttribute="top" secondItem="1Yd-mD-lia" secondAttribute="bottom" constant="25" id="sK5-C1-J76"/>
                             <constraint firstItem="Fl5-Ia-XMm" firstAttribute="height" secondItem="1Yd-mD-lia" secondAttribute="height" id="uOi-oc-efc"/>
                             <constraint firstItem="1Yd-mD-lia" firstAttribute="leading" secondItem="b5k-el-aAv" secondAttribute="leading" constant="20" id="uhq-nA-PBA"/>
+                            <constraint firstItem="f50-le-CgI" firstAttribute="centerX" secondItem="WhN-0H-zRG" secondAttribute="centerX" id="xet-8b-ZE7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UO4-kJ-h3d"/>
@@ -573,9 +588,9 @@
                                 <state key="normal" title="Button" image="Tenet"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6M-Ti-alW">
-                                <rect key="frame" x="165.5" y="545" width="83" height="45"/>
+                                <rect key="frame" x="156.5" y="545" width="101" height="45"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="28"/>
-                                <state key="normal" title="Tenet">
+                                <state key="normal" title="Tenant">
                                     <color key="titleColor" red="0.062745098040000002" green="0.15686274510000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -745,7 +760,7 @@
                         <viewLayoutGuide key="safeArea" id="QDw-Jy-U1p"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Account" id="DTY-8C-Dw0"/>
+                    <tabBarItem key="tabBarItem" title="My Account" selectedImage="person" catalog="system" id="DTY-8C-Dw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dk-k6-hGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -818,7 +833,7 @@
                         <viewLayoutGuide key="safeArea" id="NfO-2q-huH"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Uploads" selectedImage="square.and.arrow.up" catalog="system" id="A6e-in-kaO"/>
+                    <tabBarItem key="tabBarItem" title="Uploads" image="square.and.arrow.up" catalog="system" selectedImage="square.and.arrow.up" id="A6e-in-kaO"/>
                     <connections>
                         <outlet property="addressTextField" destination="1Re-6Y-vkf" id="LbY-AR-ULL"/>
                     </connections>
@@ -848,7 +863,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="47" id="M70-9w-YRz">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="47"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M70-9w-YRz" id="v9F-mk-0rS">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
@@ -965,7 +980,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UoA-wy-Gko">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoA-wy-Gko" id="fyB-o6-fOt">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -978,7 +993,7 @@
                         <viewLayoutGuide key="safeArea" id="6VU-fV-7kG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chats" selectedImage="message" catalog="system" id="byS-p3-Fcq"/>
+                    <tabBarItem key="tabBarItem" title="Chats" image="message" catalog="system" selectedImage="message" id="byS-p3-Fcq"/>
                     <navigationItem key="navigationItem" id="PQX-sU-57D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icr-ni-P8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1063,7 +1078,7 @@
                         <viewLayoutGuide key="safeArea" id="jEq-UI-DxV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Account" id="hDN-ZG-76F"/>
+                    <tabBarItem key="tabBarItem" title="My Account" image="person" catalog="system" id="hDN-ZG-76F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bc0-2s-IHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1079,6 +1094,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="linkColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="CqY-1c-SS5" kind="relationship" relationship="viewControllers" id="TRw-oZ-SnI"/>
@@ -1118,9 +1134,16 @@
         <image name="appLogo" width="64" height="64"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
