@@ -10,6 +10,7 @@
 		54B8301527FB2A4C00BEB296 /* FeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8301427FB2A4C00BEB296 /* FeedbackTableViewCell.swift */; };
 		A946D34627EAF0C7006174D4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946D34527EAF0C7006174D4 /* LocationViewController.swift */; };
 		A946D34B27EAF14D006174D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946D34A27EAF14D006174D4 /* LoginViewController.swift */; };
+		A96DE03827FCA836001C9309 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96DE03727FCA836001C9309 /* MyInformationViewController.swift */; };
 		A999B9B027EA1B1A000AD3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999B9AF27EA1B1A000AD3D8 /* AppDelegate.swift */; };
 		A999B9B227EA1B1A000AD3D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999B9B127EA1B1A000AD3D8 /* SceneDelegate.swift */; };
 		A999B9B727EA1B1A000AD3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A999B9B527EA1B1A000AD3D8 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		54B8301427FB2A4C00BEB296 /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
 		A946D34527EAF0C7006174D4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		A946D34A27EAF14D006174D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A96DE03727FCA836001C9309 /* MyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
 		A999B9AC27EA1B1A000AD3D8 /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A999B9AF27EA1B1A000AD3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A999B9B127EA1B1A000AD3D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				E7D7EDA327F4EE6100A04266 /* UserSelectionViewController.swift */,
 				A946D34A27EAF14D006174D4 /* LoginViewController.swift */,
 				54B8301427FB2A4C00BEB296 /* FeedbackTableViewCell.swift */,
+				A96DE03727FCA836001C9309 /* MyInformationViewController.swift */,
 				A999B9B527EA1B1A000AD3D8 /* Main.storyboard */,
 				A999B9B827EA1B24000AD3D8 /* Assets.xcassets */,
 				A999B9BA27EA1B24000AD3D8 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			files = (
 				A946D34627EAF0C7006174D4 /* LocationViewController.swift in Sources */,
 				A999B9B027EA1B1A000AD3D8 /* AppDelegate.swift in Sources */,
+				A96DE03827FCA836001C9309 /* MyInformationViewController.swift in Sources */,
 				A9CF352C27EAEF93007215F3 /* LogoutViewController.swift in Sources */,
 				A9B5E95F27F4BDB200421377 /* UploadsViewController.swift in Sources */,
 				E7D7EDA427F4EE6100A04266 /* UserSelectionViewController.swift in Sources */,
