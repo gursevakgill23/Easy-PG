@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A93E6C6928048F8E002CE36B /* OwnerAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93E6C6828048F8E002CE36B /* OwnerAccountViewController.swift */; };
 		A946D34627EAF0C7006174D4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946D34527EAF0C7006174D4 /* LocationViewController.swift */; };
 		A946D34B27EAF14D006174D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946D34A27EAF14D006174D4 /* LoginViewController.swift */; };
 		A96DE03827FCA836001C9309 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96DE03727FCA836001C9309 /* MyInformationViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A93E6C6828048F8E002CE36B /* OwnerAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerAccountViewController.swift; sourceTree = "<group>"; };
 		A946D34527EAF0C7006174D4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		A946D34A27EAF14D006174D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A96DE03727FCA836001C9309 /* MyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				A999B9BA27EA1B24000AD3D8 /* LaunchScreen.storyboard */,
 				A999B9BD27EA1B24000AD3D8 /* Info.plist */,
 				A98E511E280338EA00528954 /* BrowseViewController.swift */,
+				A93E6C6828048F8E002CE36B /* OwnerAccountViewController.swift */,
 			);
 			path = CapstoneProject;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93E6C6928048F8E002CE36B /* OwnerAccountViewController.swift in Sources */,
 				A946D34627EAF0C7006174D4 /* LocationViewController.swift in Sources */,
 				A999B9B027EA1B1A000AD3D8 /* AppDelegate.swift in Sources */,
 				A96DE03827FCA836001C9309 /* MyInformationViewController.swift in Sources */,
