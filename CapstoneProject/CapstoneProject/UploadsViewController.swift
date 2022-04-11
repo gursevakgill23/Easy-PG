@@ -16,13 +16,13 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
     @IBOutlet weak var pricetextField: UITextField!
     @IBOutlet weak var uploadedImagesView: UIImageView!
     @IBOutlet weak var leaseTextField: UITextField!
+    public var completionHandler : ((String?)->Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
         addressTextField?.delegate = self
         pricetextField?.delegate = self
         leaseTextField?.delegate = self
         numberofBeds?.delegate = self
-// Do any additional setup fter loading the view.
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         addressTextField.resignFirstResponder()
@@ -32,6 +32,7 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
 
         return true
     }
+    
 
     func showImagePicker(sourceType:UIImagePickerController.SourceType)-> UIImagePickerController{
         let imgPicker = UIImagePickerController()
@@ -50,7 +51,13 @@ class UploadsViewController: UIViewController,UIImagePickerControllerDelegate
         uploadedItemImages.image = image
         dismiss(animated: true)
     }
-
+    
+    @IBAction func uploadItemBtn(_ sender: Any) {
+        completionHandler!(addressTextField.text)
+        dismiss(animated: true)
+        
+    }
+    
     
 
     
