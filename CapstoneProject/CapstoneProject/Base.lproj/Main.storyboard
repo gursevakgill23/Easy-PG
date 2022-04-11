@@ -251,16 +251,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-HZ-9QA">
-                                <rect key="frame" x="56" y="579" width="276" height="62"/>
+                                <rect key="frame" x="56" y="546" width="276" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.15686274510000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSubmit:" destination="YTD-WC-hjg" eventType="touchUpInside" id="94F-TO-cq1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnm-3i-P3h">
-                                <rect key="frame" x="56" y="686" width="276" height="62"/>
+                                <rect key="frame" x="56" y="632" width="276" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.15686274510000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -271,10 +274,19 @@
                                     <action selector="btnClear:" destination="YTD-WC-hjg" eventType="touchUpInside" id="EuZ-8t-toi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHW-7t-RKH">
+                                <rect key="frame" x="20" y="702" width="374" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r97-Un-aGZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
+                            <outlet property="ErrorLb1" destination="LHW-7t-RKH" id="oVl-fL-24N"/>
                             <outlet property="txtEmailid" destination="Mwz-Zs-uBP" id="dFv-If-X97"/>
                             <outlet property="txtFeedback" destination="MPu-Xr-aTQ" id="A19-pe-p3b"/>
                             <outlet property="txtFullname" destination="IA6-Kz-omh" id="N2Z-cz-Med"/>
@@ -1333,6 +1345,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="4xV-BI-63t"/>
         <segue reference="lVh-g1-fc6"/>
     </inferredMetricsTieBreakers>
     <resources>
