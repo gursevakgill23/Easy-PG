@@ -710,6 +710,9 @@
                                 <state key="normal" title="Track Location">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="getDirectionButton:" destination="Z0v-pX-ZFM" eventType="touchUpInside" id="xFa-lZ-MKv"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2u-og-xLm">
                                 <rect key="frame" x="20" y="97" width="374" height="34"/>
@@ -723,6 +726,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="V0t-NC-tC2"/>
+                    <connections>
+                        <outlet property="map" destination="ecG-eI-las" id="UMP-qh-2mq"/>
+                        <outlet property="textAddress" destination="A2u-og-xLm" id="oz4-ED-XMD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPl-rn-RJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

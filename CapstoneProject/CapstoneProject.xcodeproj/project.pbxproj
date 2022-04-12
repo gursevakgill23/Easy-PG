@@ -80,13 +80,13 @@
 				E7D7EDA327F4EE6100A04266 /* UserSelectionViewController.swift */,
 				A946D34A27EAF14D006174D4 /* LoginViewController.swift */,
 				A96DE03727FCA836001C9309 /* MyInformationViewController.swift */,
+				A98E511E280338EA00528954 /* BrowseViewController.swift */,
+				A93E6C6828048F8E002CE36B /* OwnerAccountViewController.swift */,
+				A9AA119928056A1300074615 /* MyUploadsViewController.swift */,
 				A999B9B527EA1B1A000AD3D8 /* Main.storyboard */,
 				A999B9B827EA1B24000AD3D8 /* Assets.xcassets */,
 				A999B9BA27EA1B24000AD3D8 /* LaunchScreen.storyboard */,
 				A999B9BD27EA1B24000AD3D8 /* Info.plist */,
-				A98E511E280338EA00528954 /* BrowseViewController.swift */,
-				A93E6C6828048F8E002CE36B /* OwnerAccountViewController.swift */,
-				A9AA119928056A1300074615 /* MyUploadsViewController.swift */,
 			);
 			path = CapstoneProject;
 			sourceTree = "<group>";
