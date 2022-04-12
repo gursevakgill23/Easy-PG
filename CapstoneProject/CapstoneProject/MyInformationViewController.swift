@@ -51,6 +51,7 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
         showdetailsView.text = "Name: \(Name)\nAge:\(Age)\nGender\(Gender)\nBio: \(Bio)"
         showdetailsView.isHidden = false
         editProfile.isHidden = false
+        
     }
     func showImagePicker(sourceType:UIImagePickerController.SourceType)-> UIImagePickerController{
         let imgPicker = UIImagePickerController()
@@ -66,11 +67,13 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
     }
     @IBAction func editProfileBtn(_ sender: Any) {
         showdetailsView.isHidden = true
+        imageBtn.isHidden = false
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else  {return}
         ownerimageView.image = image
         imageBtn.isHidden = true
         dismiss(animated: true)
+        
     }
 }

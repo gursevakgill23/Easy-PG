@@ -2,7 +2,7 @@
 //  BrowseViewController.swift
 //  CapstoneProject
 //
-//  Created by user202391 on 4/10/22.
+//  Created by on 4/10/22.
 //
 
 import UIKit
