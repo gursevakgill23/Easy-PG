@@ -17,8 +17,6 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
         age.delegate  = self
         gender.delegate = self
         bio.delegate = self
-        showdetailsView.isHidden = true
-        editProfile.isHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -31,10 +29,8 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
         return true
     }
     
-    @IBOutlet weak var editProfile: UIButton!
     @IBOutlet weak var ownerimageView: UIImageView!
     
-    @IBOutlet weak var showdetailsView: UITextView!
     @IBOutlet weak var imageBtn: UIButton!
     
     @IBOutlet weak var firstname: UITextField!
@@ -44,14 +40,6 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
     @IBOutlet weak var gender: UITextField!
     @IBOutlet weak var bio: UITextField!
     @IBAction func addDetailsBtn(_ sender: Any) {
-        let Name = firstname.text! + lastname.text!
-        let Age = age.text!
-        let Gender = gender.text!
-        let Bio = bio.text!
-        showdetailsView.text = "Name: \(Name)\nAge:\(Age)\nGender\(Gender)\nBio: \(Bio)"
-        showdetailsView.isHidden = false
-        editProfile.isHidden = false
-        
     }
     func showImagePicker(sourceType:UIImagePickerController.SourceType)-> UIImagePickerController{
         let imgPicker = UIImagePickerController()
@@ -65,15 +53,10 @@ class MyInformationViewController: UIViewController,UIImagePickerControllerDeleg
         let picker = showImagePicker(sourceType: .photoLibrary)
         self.present(picker, animated: true)
     }
-    @IBAction func editProfileBtn(_ sender: Any) {
-        showdetailsView.isHidden = true
-        imageBtn.isHidden = false
-    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else  {return}
         ownerimageView.image = image
         imageBtn.isHidden = true
         dismiss(animated: true)
-        
     }
 }
