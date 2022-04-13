@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		541D512E28045216008669BC /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D512D28045216008669BC /* FeedbackViewController.swift */; };
+=======
+>>>>>>> d826ac65287bd3576a0484738cd6d4f6215f37fa
 		A946D34627EAF0C7006174D4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946D34527EAF0C7006174D4 /* LocationViewController.swift */; };
 		A946D34B27EAF14D006174D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946D34A27EAF14D006174D4 /* LoginViewController.swift */; };
 		A96DE03827FCA836001C9309 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96DE03727FCA836001C9309 /* MyInformationViewController.swift */; };
@@ -23,7 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		541D512D28045216008669BC /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> d826ac65287bd3576a0484738cd6d4f6215f37fa
 		A946D34527EAF0C7006174D4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		A946D34A27EAF14D006174D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A96DE03727FCA836001C9309 /* MyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
